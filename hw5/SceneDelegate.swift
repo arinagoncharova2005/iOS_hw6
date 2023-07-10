@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  hw5
+//  hw4
 //
-//  Created by Arina Goncharova on 10.07.2023.
+//  Created by Arina Goncharova on 30.06.2023.
 //
 
 import UIKit
