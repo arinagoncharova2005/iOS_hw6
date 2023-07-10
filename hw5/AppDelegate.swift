@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  hw5
+//  hw4
 //
-//  Created by Arina Goncharova on 10.07.2023.
+//  Created by Arina Goncharova on 30.06.2023.
 //
 
 import UIKit
@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // get current number of times app has been launched
+        
+        let currentCount = UserDefaults.standard.integer(forKey: "openCount")
+
+        // increment received number by one
+        UserDefaults.standard.set(currentCount+1, forKey:"openCount")
+        
         return true
     }
 
