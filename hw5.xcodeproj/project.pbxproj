@@ -19,6 +19,8 @@
 		C34921782A5884E2001E9370 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34921752A5884E2001E9370 /* TableViewCell.swift */; };
 		C349217F2A5886AA001E9370 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C349217D2A5886AA001E9370 /* NetworkManager.swift */; };
 		C34921802A5886AA001E9370 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C349217E2A5886AA001E9370 /* APITarget.swift */; };
+		C3E771962A5EF662002A17C9 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E771952A5EF662002A17C9 /* CharacterListViewModel.swift */; };
+		C3E771992A5F1B80002A17C9 /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = C3E771982A5F1B80002A17C9 /* Bond */; };
 		C3F8E8CB2A5B4A0700231835 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3F8E8C92A5B4A0700231835 /* Model.xcdatamodeld */; };
 		C3F8E8D12A5BCCB600231835 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8E8D02A5BCCB600231835 /* PersistentContainer.swift */; };
 		C3F8E8DC2A5C45B700231835 /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8E8DA2A5C45B700231835 /* Character+CoreDataClass.swift */; };
@@ -39,6 +41,7 @@
 		C34921752A5884E2001E9370 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C349217D2A5886AA001E9370 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = hw5/Services1/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		C349217E2A5886AA001E9370 /* APITarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APITarget.swift; path = hw5/Services1/APITarget.swift; sourceTree = SOURCE_ROOT; };
+		C3E771952A5EF662002A17C9 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		C3F8E8CA2A5B4A0700231835 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C3F8E8D02A5BCCB600231835 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		C3F8E8DA2A5C45B700231835 /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Character+CoreDataClass.swift"; path = "hw5/Character+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C344FEBF2A588E3A00734B4F /* Moya in Frameworks */,
+				C3E771992A5F1B80002A17C9 /* Bond in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +97,7 @@
 				C349215F2A588495001E9370 /* AppDelegate.swift */,
 				C34921612A588495001E9370 /* SceneDelegate.swift */,
 				C34921632A588495001E9370 /* ViewController.swift */,
+				C3E771952A5EF662002A17C9 /* CharacterListViewModel.swift */,
 				C3F8E8D02A5BCCB600231835 /* PersistentContainer.swift */,
 				C34921652A588495001E9370 /* Main.storyboard */,
 				C3F8E8C92A5B4A0700231835 /* Model.xcdatamodeld */,
@@ -130,6 +135,7 @@
 			name = hw5;
 			packageProductDependencies = (
 				C344FEBE2A588E3A00734B4F /* Moya */,
+				C3E771982A5F1B80002A17C9 /* Bond */,
 			);
 			productName = hw5;
 			productReference = C349215C2A588495001E9370 /* hw5.app */;
@@ -161,6 +167,7 @@
 			mainGroup = C34921532A588495001E9370;
 			packageReferences = (
 				C344FEBD2A588E3A00734B4F /* XCRemoteSwiftPackageReference "Moya" */,
+				C3E771972A5F1B7F002A17C9 /* XCRemoteSwiftPackageReference "Bond" */,
 			);
 			productRefGroup = C349215D2A588495001E9370 /* Products */;
 			projectDirPath = "";
@@ -189,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E771962A5EF662002A17C9 /* CharacterListViewModel.swift in Sources */,
 				C344FEC32A588E9300734B4F /* CharacterResponseModel.swift in Sources */,
 				C34921642A588495001E9370 /* ViewController.swift in Sources */,
 				C3F8E8DC2A5C45B700231835 /* Character+CoreDataClass.swift in Sources */,
@@ -426,6 +434,14 @@
 				kind = branch;
 			};
 		};
+		C3E771972A5F1B7F002A17C9 /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -433,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C344FEBD2A588E3A00734B4F /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		C3E771982A5F1B80002A17C9 /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3E771972A5F1B7F002A17C9 /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
 		};
 /* End XCSwiftPackageProductDependency section */
 

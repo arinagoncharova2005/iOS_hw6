@@ -10,12 +10,39 @@
       }
     },
     {
+      "identity" : "bond",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DeclarativeHub/Bond",
+      "state" : {
+        "revision" : "146943c0bc03a93c48fb6c57db4e39f4b38ba74b",
+        "version" : "7.8.1"
+      }
+    },
+    {
+      "identity" : "differ",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tonyarnold/Differ.git",
+      "state" : {
+        "revision" : "5520fda947f1f9777a806389c2ba587219bc0538",
+        "version" : "1.4.6"
+      }
+    },
+    {
       "identity" : "moya",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya.git",
       "state" : {
         "branch" : "master",
         "revision" : "963654cd4f82d17d7546b9d6127c29f6df091717"
+      }
+    },
+    {
+      "identity" : "reactivekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DeclarativeHub/ReactiveKit.git",
+      "state" : {
+        "revision" : "57a902a1b4f7aeafcb7b5cfec0c15635d0fd2b63",
+        "version" : "3.19.2"
       }
     },
     {
