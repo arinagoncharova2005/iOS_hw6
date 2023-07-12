@@ -114,6 +114,7 @@ class CharacterViewController: UIViewController {
     @IBAction func deleteCharacterButton(_ sender: Any) {
         guard let data else { return }
         delegate?.deletePersonData(with: NSNumber(value: data.characterID).intValue)
+        self.dismiss(animated: true)
     }
     /*
     // MARK: - Navigation
